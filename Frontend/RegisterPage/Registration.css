@@ -1,0 +1,193 @@
+/* ---------- GLOBAL ---------- */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ---------- CONTAINER ---------- */
+.container {
+    background: #ffffff;
+    padding: 35px 40px;
+    width: 400px;
+    border-radius: 14px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ---------- HEADING ---------- */
+h2 {
+    text-align: center;
+    margin-bottom: 22px;
+    color: #203a43;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* ---------- LABEL ---------- */
+label {
+    font-weight: 500;
+    display: block;
+    margin-top: 14px;
+    color: #333;
+}
+
+/* ---------- INPUT FIELDS ---------- */
+input {
+    width: 100%;
+    padding: 11px 12px;
+    margin-top: 6px;
+    border-radius: 8px;
+    border: 1.5px solid #d1d9e6;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    background: #f9fbfd;
+}
+
+/* Hover animation */
+input:hover {
+    border-color: #4facfe;
+    background: #ffffff;
+}
+
+/* Focus animation */
+input:focus {
+    outline: none;
+    border-color: #2c90ff;
+    box-shadow: 0 0 0 3px rgba(44, 144, 255, 0.2);
+    transform: translateY(-1px);
+}
+
+/* ---------- BUTTON ---------- */
+button {
+    width: 100%;
+    margin-top: 22px;
+    padding: 11px;
+    background: linear-gradient(135deg, #2c90ff, #4facfe);
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(44, 144, 255, 0.4);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+/* ---------- ERROR & SUCCESS ---------- */
+.error {
+    color: #e63946;
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+.success {
+    color: #2e7d32;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* ---------- FORGOT PASSWORD ---------- */
+.forgot {
+    text-align: center;
+    margin-top: 16px;
+}
+
+.forgot a {
+    color: #2c90ff;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.forgot a:hover {
+    color: #1a5fd0;
+    text-decoration: underline;
+}
+
+/* ---------- OTP BOX ---------- */
+.otp-box {
+    display: none;
+    margin-top: 18px;
+    animation: fadeIn 0.4s ease-in-out;
+}
+button,
+a {
+    cursor: pointer;
+}
+.switch {
+    margin-top: 18px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+
+.switch a {
+    color: #2563eb; /* professional blue */
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 5px;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.switch a:hover {
+    color: #1e40af;
+    text-decoration: underline;
+}
+.home-btn {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+
+    background: rgba(37, 99, 235, 0.1);
+    color: #2563eb;
+    padding: 8px 14px;
+    border-radius: 8px;
+
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.home-btn:hover {
+    background: #2563eb;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(37, 99, 235, 0.35);
+}

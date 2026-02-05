@@ -1,0 +1,131 @@
+/* ---------- HOME PAGE ---------- */
+
+.home-body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    animation: slideDown 0.8s ease;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-btn {
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.login-btn {
+    background: transparent;
+    color: #ffffff;
+    border: 1.5px solid #ffffff;
+}
+
+.login-btn:hover {
+    background: #ffffff;
+    color: #203a43;
+}
+
+.register-btn {
+    background: linear-gradient(135deg, #2c90ff, #4facfe);
+    color: #ffffff;
+}
+
+.register-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(79, 172, 254, 0.5);
+}
+
+/* HERO SECTION */
+.hero {
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    animation: fadeIn 1s ease;
+}
+
+.hero-title {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    animation: floatText 3s ease-in-out infinite;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    opacity: 0.9;
+    margin-bottom: 30px;
+}
+
+/* HERO BUTTON */
+.primary-btn {
+    padding: 12px 28px;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(135deg, #2c90ff, #4facfe);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.primary-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(79, 172, 254, 0.6);
+}
+
+/* ANIMATIONS */
+@keyframes slideDown {
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes floatText {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+
+.nav-btn,
+.primary-btn {
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}

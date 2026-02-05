@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    background: #ffffff;
+    padding: 35px 40px;
+    width: 400px;
+    border-radius: 14px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+    animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #203a43;
+}
+
+.field {
+    position: relative;
+    margin-top: 18px;
+}
+
+.field input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1.5px solid #d1d9e6;
+    font-size: 14px;
+    background: #f9fbfd;
+    transition: 0.3s;
+}
+
+.field input:hover {
+    border-color: #4facfe;
+}
+
+.field input:focus {
+    outline: none;
+    border-color: #2c90ff;
+    box-shadow: 0 0 0 3px rgba(44,144,255,0.2);
+}
+
+.field label {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    color: #777;
+    font-size: 13px;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: 0.3s;
+    background: #fff;
+    padding: 0 6px;
+}
+
+.field input:focus + label,
+.field input:valid + label {
+    top: -6px;
+    font-size: 11px;
+    color: #2c90ff;
+}
+
+.toggle {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 12px;
+    background: linear-gradient(135deg, #2c90ff, #4facfe);
+    border: none;
+    color: white;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(44,144,255,0.4);
+}
+
+.error {
+    color: #e63946;
+    font-size: 12px;
+}
+
+.success {
+    color: green;
+    text-align: center;
+}
+
+.forgot, .switch {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.forgot a, .switch a {
+    color: #2c90ff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.dark-toggle {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+}
+
+/* DARK MODE */
+.dark {
+    background: #121212;
+}
+
+.dark .container {
+    background: #1e1e1e;
+    color: #fff;
+}
+
+.dark input {
+    background: #2c2c2c;
+    color: #fff;
+    border-color: #444;
+}
+
+.dark label {
+    background: #1e1e1e;
+}
+.home-btn {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+
+    background: rgba(37, 99, 235, 0.1);
+    color: #2563eb;
+    padding: 8px 14px;
+    border-radius: 8px;
+
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.home-btn:hover {
+    background: #2563eb;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(37, 99, 235, 0.35);
+}

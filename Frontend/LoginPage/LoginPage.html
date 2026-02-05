@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Java Wellness | Login</title>
+    <link rel="stylesheet" href="LoginPage.css">
+</head>
+<body>
+
+    
+
+<div class="container">
+    <div class="dark-toggle" onclick="toggleDarkMode()">🌙</div>
+    <h2>Login</h2>
+
+    <form>
+
+        <div class="field">
+            <input type="email" required>
+            <label>Email</label>
+        </div>
+
+        <div class="field">
+            <input type="password" id="loginPassword" required>
+            <label>Password</label>
+            <span class="toggle" onclick="togglePassword('loginPassword')">👁️</span>
+        </div>
+
+        <button>Login</button>
+    </form>
+
+    <div class="switch">
+    New user? 
+    <a href="../RegisterPage/RegistrationPage.html">Register</a>
+</div>
+
+</div>
+<a href="../Homepage/Homepage.html" class="home-btn">🏠 Home</a>
+
+
+
+<script src="LoginPage.js"></script>
+</body>
+</html>
